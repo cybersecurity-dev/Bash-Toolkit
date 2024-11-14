@@ -1,0 +1,23 @@
+##########################
+alias print_distro='uname -a'
+alias print_cpu='cat /proc/cpuinfo'
+alias print_ram='free -m'
+##########################
+
+
+
+##########################
+alias cmd_count_files="ls -l . | egrep -c '^-'"
+alias cmd_count_filetypes="find . -type f | sed -n 's/..*\.//p' | sort | uniq -c"
+alias cmd_count_directory="tree -a . | tail -1"
+alias cmd_groupby_filetypes='find . -type f | sed -n 's/..*\.//p' | sort | uniq -c'
+
+
+alias cmd_delete_empty_directory="find . -empty -type d -delete"
+alias cmd_delete_empty_file="find . -empty -type f -delete"
+
+
+alias cmd_update_bashrc='source ~/.bashrc'
+alias cmd_ping='ping -c 5 www.google.com'
+##########################
+

@@ -29,3 +29,16 @@ alias watch_system_wHtop='htop -u $USER'
 alias watch_system_wBpytop='bpytop'
 alias watch_Ports='ss -lt'
 ##########################
+
+
+##########################
+alias listen_SwissClassic96kbps='mplayer http://stream.srg-ssr.ch/m/rsc_de/aacp_96'
+alias listen_SwissClassic128kbps='mplayer http://stream.srg-ssr.ch/m/rsc_de/mp3_128'
+
+alias listen_SwissJazz96kbps='mplayer http://stream.srg-ssr.ch/m/rsj/aacp_96'
+alias listen_SwissJazz128kbps='mplayer http://stream.srg-ssr.ch/m/rsj/mp3_128'
+
+
+alias listen_SwissPop96kbps='mplayer http://stream.srg-ssr.ch/m/rsp/aacp_96'
+alias listen_SwissPop128kbps='mplayer http://stream.srg-ssr.ch/m/rsp/mp3_128'
+##########################

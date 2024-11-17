@@ -1,9 +1,14 @@
 ##########################
+alias cmd_update_linux='sudo apt-get update && sudo apt-get upgrade'
+alias cmd_clean_fix='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get autoclean && sudo apt-get autoremove'
+##########################
+
+
+##########################
 alias print_distro='uname -a'
 alias print_cpu='cat /proc/cpuinfo'
 alias print_ram='free -m'
 ##########################
-
 
 
 ##########################
@@ -20,7 +25,6 @@ alias cmd_delete_empty_file="find . -empty -type f -delete"
 alias cmd_update_bashrc='source ~/.bashrc'
 alias cmd_ping='ping -c 5 www.google.com'
 ##########################
-
 
 
 
@@ -58,6 +62,11 @@ function fn_run_python3_background() {
 
 function fn_print_directory_size() {
     sudo du -sh $1
+}
+
+function fn_mkdircd() {
+  mkdir "$1"
+  cd "$1"
 }
 
 ##########################

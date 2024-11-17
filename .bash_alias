@@ -42,3 +42,22 @@ alias listen_SwissJazz128kbps='mplayer http://stream.srg-ssr.ch/m/rsj/mp3_128'
 alias listen_SwissPop96kbps='mplayer http://stream.srg-ssr.ch/m/rsp/aacp_96'
 alias listen_SwissPop128kbps='mplayer http://stream.srg-ssr.ch/m/rsp/mp3_128'
 ##########################
+
+
+##########################
+alias cmd_update_bashrc='source ~/.bashrc'
+
+function fn_print_process_id() {
+    function_id=`ps -ef | grep $1 | head -n 1 | cut -f5 -d " "`
+    echo $function_id
+}
+
+function fn_run_python3_background() {
+  nohup python3 $1.py 1> "$1.out" 2> "$1.err" &
+}
+
+function fn_print_directory_size() {
+    sudo du -sh $1
+}
+
+##########################

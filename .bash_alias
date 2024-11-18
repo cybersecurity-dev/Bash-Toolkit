@@ -82,3 +82,9 @@ alias run_jupyterLab_hohup='d_workspace && d_workspace_jupy && nohup jupyter not
 alias run_list_running_server='jupyter notebook list'
 
 ##########################
+
+
+##########################
+alias d_workspace='cd ~/workspace'
+alias d_workspace_jupy='cd ~/workspace/w_jupyter'
+##########################

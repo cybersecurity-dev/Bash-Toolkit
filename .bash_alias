@@ -70,3 +70,15 @@ function fn_mkdircd() {
 }
 
 ##########################
+
+
+##########################
+alias run_jupyter='d_workspace && d_workspace_jupy && jupyter notebook --no-browser --port=8855'
+alias run_jupyter_hohup='d_workspace && d_workspace_jupy && nohup jupyter notebook --no-browser --port=8855 1> "jupyter_notebook.out" 2> "jupyter_notebook.err" &'
+
+alias run_jupyterLab='d_workspace && d_workspace_jupy && jupyter lab --no-browser --port=8855'
+alias run_jupyterLab_hohup='d_workspace && d_workspace_jupy && nohup jupyter notebook --no-browser --port=8855 1> "jupyter_notebook.out" 2> "jupyter_notebook.err" &'
+
+alias run_list_running_server='jupyter notebook list'
+
+##########################

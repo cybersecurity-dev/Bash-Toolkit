@@ -8,6 +8,7 @@ alias cmd_clean_fix='sudo apt-get autoclean && sudo apt-get autoremove && sudo a
 alias print_distro='uname -a'
 alias print_cpu='cat /proc/cpuinfo'
 alias print_ram='free -m'
+alias print_ip="echo 'Your Ip: `curl -o- -s https://api.ipify.org/`'"
 ##########################
 
 
@@ -71,6 +72,11 @@ function fn_mkdircd() {
 
 ##########################
 
+##########################
+alias d_workspace='cd ~/workspace'
+alias d_workspace_jupy='cd ~/workspace/w_jupyter'
+##########################
+
 
 ##########################
 alias run_jupyter='d_workspace && d_workspace_jupy && jupyter notebook --no-browser --port=8855'
@@ -81,10 +87,4 @@ alias run_jupyterLab_hohup='d_workspace && d_workspace_jupy && nohup jupyter not
 
 alias run_list_running_server='jupyter notebook list'
 
-##########################
-
-
-##########################
-alias d_workspace='cd ~/workspace'
-alias d_workspace_jupy='cd ~/workspace/w_jupyter'
 ##########################

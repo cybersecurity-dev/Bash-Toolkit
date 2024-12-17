@@ -33,6 +33,7 @@ alias cmd_ping='ping -c 5 www.google.com'
 alias watch_system_wHtop='htop -u $USER'
 alias watch_system_wBpytop='bpytop'
 alias watch_Ports='ss -lt'
+alias print_IP_Geolocation='curl ipinfo.io'
 ##########################
 
 

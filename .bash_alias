@@ -5,7 +5,7 @@ case "$OSTYPE" in  linux-gnu*)
     ;;
 esac
 case "$OSTYPE" in  linux-fedora*)
-    alias cmd_update_linux='sudo dnf update'
+	alias cmd_update_linux='sudo dnf update'
     ;;
 esac
 ##########################

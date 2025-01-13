@@ -1,8 +1,14 @@
 ##########################
-alias cmd_update_linux='sudo apt-get update && sudo apt-get upgrade'
-alias cmd_clean_fix='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get autoclean && sudo apt-get autoremove'
+case "$OSTYPE" in  linux-gnu*)
+	alias cmd_update_linux='sudo apt-get update && sudo apt-get upgrade'
+	alias cmd_clean_fix='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get autoclean && sudo apt-get autoremove'
+    ;;
+esac
+case "$OSTYPE" in  linux-fedora*)
+    alias cmd_update_linux='sudo dnf update'
+    ;;
+esac
 ##########################
-
 
 ##########################
 alias print_distro='uname -a'

@@ -95,3 +95,26 @@ alias run_jupyterLab_hohup='d_workspace && d_workspace_jupy && nohup jupyter not
 alias run_list_running_server='jupyter notebook list'
 
 ##########################
+
+
+##########################
+# Check available power states
+available_states=$(cat /sys/power/state)
+
+# Create aliases if power states are available
+if [[ $available_states == *"freeze"* ]]; then
+  alias cmd_suspend='sudo systemctl suspend'
+fi
+
+if [[ $available_states == *"standby"* ]]; then
+  alias cmd_suspend='sudo systemctl suspend'
+fi
+
+if [[ $available_states == *"mem"* ]]; then
+  alias cmd_suspend='sudo systemctl suspend'
+fi
+
+if [[ $available_states == *"disk"* ]]; then
+  alias cmd_hibernate='sudo systemctl hibernate'
+##########################
+

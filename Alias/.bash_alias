@@ -98,6 +98,19 @@ alias run_list_running_server='jupyter notebook list'
 
 
 ##########################
+
+alias conda_packer='cd $HOME/workspace/workspace_packer/ && conda activate workspace_packer'
+alias conda_network='cd $HOME/workspace/workspace_network/ && conda activate workspace_network'
+alias conda_malware='cd $HOME/workspace/workspace_malware/ && conda activate workspace_malware'
+alias conda_reverse='cd $HOME/workspace/workspace_reverse/ && conda activate workspace_reverse'
+alias conda_python='cd $HOME/workspace/workspace_python/ && conda activate workspace_python'
+alias conda_vulnerability='cd $HOME/workspace/workspace_vulnerability/ && conda activate workspace_vulnerability'
+
+##########################
+
+
+
+##########################
 # Check available power states
 available_states=$(cat /sys/power/state)
 

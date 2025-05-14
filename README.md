@@ -1,6 +1,16 @@
 # **Bash Toolkit** | _Your Swiss Army Knife for the Command Line_
 [![open-source](https://forthebadge.com/images/badges/open-source.svg)](https://cyberthreatdefence.com/)
 
+##  Install SSH server
+
+```bash
+sudo apt-get install openssh-server \
+&& sudo systemctl enable ssh --now
+```
+### Verify that ssh service running
+```bash
+sudo systemctl status ssh
+```
 
 ## Generate ssh-key
 ```bash
@@ -22,4 +32,10 @@ copy fingerprint and paste into:
 ```bash
 vim /home/user_remote/.ssh/authorized_keys
 ```
+or copy and install the public key using `ssh-copy-id` command in Linux
+
+```bash
+ssh-copy-id user_remote@user_remote_ip
+```
+
 and than you will connect via ssh without password but if you entered passphrase, system will ask you this.

@@ -3,10 +3,21 @@
 
 ##  Install SSH server
 
+### Debian based
 ```bash
-sudo apt-get install openssh-server \
-&& sudo systemctl enable ssh --now
+sudo apt-get install -y openssh-server && sudo systemctl enable ssh --now
 ```
+### Fedora based
+```bash
+sudo dnf install -y openssh-server && sudo systemctl enable sshd --now
+```
+### OpenSUSE based
+
+```bash
+sudo zypper install --no-confirm openssh && sudo systemctl enable sshd --now
+```
+
+
 ### Verify that ssh service running
 ```bash
 sudo systemctl status ssh

@@ -16,9 +16,12 @@ sudo dnf install -y openssh-server && sudo systemctl enable sshd --now
 ```bash
 sudo zypper install --no-confirm openssh && sudo systemctl enable sshd --now
 ```
+#### Add Firewall Rure
+```bash
+sudo firewall-cmd --permanent --add-service=ssh && sudo firewall-cmd --reload
+```
 
-
-### Verify that ssh service running
+## Verify that ssh service running
 ```bash
 sudo systemctl status ssh
 ```

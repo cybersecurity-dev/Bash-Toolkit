@@ -3,23 +3,23 @@
 
 ##  Install SSH server
 
-### Debian based
-```bash
-sudo apt-get install -y openssh-server && sudo systemctl enable ssh --now
-```
-### Fedora based
-```bash
-sudo dnf install -y openssh-server && sudo systemctl enable sshd --now
-```
-### OpenSUSE based
+* [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)
+  ```bash
+  sudo apt-get install -y openssh-server && sudo systemctl enable ssh --now
+  ```
+* [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](#)
+  ```bash
+  sudo dnf install -y openssh-server && sudo systemctl enable sshd --now
+  ```
+* [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](#)
+  ```bash
+  sudo zypper install --no-confirm openssh && sudo systemctl enable sshd --now
+  ```
 
-```bash
-sudo zypper install --no-confirm openssh && sudo systemctl enable sshd --now
-```
-#### Add Firewall Rure
-```bash
-sudo firewall-cmd --permanent --add-service=ssh && sudo firewall-cmd --reload
-```
+* Add Firewall Rure
+  ```bash
+  sudo firewall-cmd --permanent --add-service=ssh && sudo firewall-cmd --reload
+  ```
 
 ## Verify that ssh service running
 ```bash

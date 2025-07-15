@@ -53,3 +53,8 @@ ssh-copy-id user_remote@user_remote_ip
 ```
 
 and than you will connect via ssh without password but if you entered passphrase, system will ask you this.
+
+
+## Install Applications
+### Programming Language
+

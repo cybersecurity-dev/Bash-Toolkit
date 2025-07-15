@@ -57,4 +57,19 @@ and than you will connect via ssh without password but if you entered passphrase
 
 ## Install Applications
 ### Programming Language
-
+  * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
+    ```bash
+    sudo apt-get update && sudo apt-get install -y rustc && rustc -V 
+    ```
+  * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
+    ```bash
+    sudo dnf upgrade --refresh && sudo dnf install -y rustc && rustc -V
+    ```
+  * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
+    ```bash
+    sudo zypper refresh && sudo zypper install -y rustc && rustc -V
+    ```
+  * Windows Subsystem for Linux
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```

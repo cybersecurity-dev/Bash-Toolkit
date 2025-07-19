@@ -65,6 +65,7 @@ and than you will connect via ssh without password but if you entered passphrase
 
 ## Install Applications
 ### Programming Language
+#### Rust
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash
     sudo apt-get update && sudo apt-get install -y rustc && rustc -V 

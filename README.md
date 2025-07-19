@@ -68,7 +68,7 @@ and than you will connect via ssh without password but if you entered passphrase
 #### Go
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash
-    sudo apt-get update && sudo apt-get install -y go && go version 
+    sudo apt-get update && sudo apt-get install -y golang-go && go version 
     ```
   * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
     ```bash

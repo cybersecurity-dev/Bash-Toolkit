@@ -67,8 +67,17 @@ and than you will connect via ssh without password but if you entered passphrase
 ### Programming Language
 #### Go
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
+    ```bash
+    sudo apt-get update && sudo apt-get install -y go && go version 
+    ```
   * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
+    ```bash
+    sudo dnf upgrade --refresh && sudo dnf install -y go && go version
+    ```
   * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
+    ```bash
+    sudo zypper refresh && sudo zypper install -y go && go version
+    ```
 
 #### Python
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)

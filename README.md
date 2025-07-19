@@ -90,7 +90,7 @@ and than you will connect via ssh without password but if you entered passphrase
     ```
   * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
     ```bash
-    sudo zypper refresh && sudo zypper install -y python3 python3-pip python3-devel && pip3 --version && pip3 install --upgrade pip && pip3 --version
+    sudo zypper refresh && sudo zypper install -y python3 python3-pip python3-devel && pip3 --version
     ```
 
 #### Rust
@@ -104,9 +104,9 @@ and than you will connect via ssh without password but if you entered passphrase
     ```
   * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
     ```bash
-    sudo zypper refresh && sudo zypper install -y rustc && rustc -V
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustc -V
     ```
   * Windows Subsystem for Linux
     ```bash
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustc -V
     ```

@@ -81,8 +81,17 @@ and than you will connect via ssh without password but if you entered passphrase
 
 #### Python
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
+    ```bash
+    sudo apt-get update && sudo apt-get install -y -y python3 python3-pip python3-devel && pip3 --version && pip3 install --upgrade pip && pip3 --version
+    ```
   * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
+    ```bash
+    sudo dnf upgrade --refresh && sudo dnf install -y python3 python3-pip python3-devel && pip3 --version && pip3 install --upgrade pip && pip3 --version
+    ```
   * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
+    ```bash
+    sudo zypper refresh && sudo zypper install -y python3 python3-pip python3-devel && pip3 --version && pip3 install --upgrade pip && pip3 --version
+    ```
 
 #### Rust
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)

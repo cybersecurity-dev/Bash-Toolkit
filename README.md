@@ -65,6 +65,25 @@ and than you will connect via ssh without password but if you entered passphrase
 
 ## Install Applications
 ### Programming Language
+#### C/C++
+  * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
+      * LLVM 
+        ```bash
+        sudo apt-get update && sudo apt-get install -y clang && clang version 
+        ```
+      * GCC
+        ```bash
+        sudo apt-get update && sudo apt-get install -y build-essential && g++ version 
+        ```
+  * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
+     * LLVM
+    ```bash
+    sudo dnf upgrade --refresh && sudo dnf install -y clang && clang version
+    ```
+  * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
+    ```bash
+    sudo zypper refresh && sudo zypper install -y clang && clang version
+    ```
 #### Go
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash

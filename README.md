@@ -65,7 +65,7 @@ and than you will connect via ssh without password but if you entered passphrase
 
 ## Install Applications
 ### Programming Language
-#### [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="c-cpp"></a>
+#### [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="install-c-cpp"></a>
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
       * LLVM 
         ```bash
@@ -84,7 +84,7 @@ and than you will connect via ssh without password but if you entered passphrase
     ```bash
     sudo zypper refresh && sudo zypper install -y clang && clang version
     ```
-#### [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#) <a id="go"></a>
+#### [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#) <a id="install-go"></a>
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash
     sudo apt-get update && sudo apt-get install -y golang && go version 
@@ -98,7 +98,7 @@ and than you will connect via ssh without password but if you entered passphrase
     sudo zypper refresh && sudo zypper install -y go && go version
     ```
 
-#### [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) <a id="python"></a>
+#### [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) <a id="install-python"></a>
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash
     sudo apt-get update && sudo apt-get install -y -y python3 python3-pip python3-devel && pip3 --version && pip3 install --upgrade pip && pip3 --version
@@ -112,7 +112,7 @@ and than you will connect via ssh without password but if you entered passphrase
     sudo zypper refresh && sudo zypper install -y python3 python3-pip python3-devel && pip3 --version
     ```
 
-#### [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#) <a id="rust"></a>
+#### [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#) <a id="install-rust"></a>
   * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
     ```bash
     sudo apt-get update && sudo apt-get install -y rustc && rustc -V 

@@ -129,3 +129,20 @@ and than you will connect via ssh without password but if you entered passphrase
     ```bash
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && rustc -V
     ```
+#### [![Solidity](https://img.shields.io/badge/Solidity-363636?logo=solidity&logoColor=fff)](https://soliditylang.org/) <a id="install-solidity"></a>
+  * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](https://www.debian.org/)
+    ```bash
+    sudo add-apt-repository ppa:ethereum/Ethereum
+    ```
+    ```bash
+    sudo apt-get update && sudo apt-get install -y solc && solc --version
+    ```
+  * [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](https://www.fedoraproject.org/)
+    ```bash
+    sudo snap install solc &&  && solc --version
+    ```
+  * [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](https://www.opensuse.org/)
+    ```bash
+    sudo snap install solc && solc --version
+    ```
+

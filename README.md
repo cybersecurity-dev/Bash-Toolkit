@@ -153,3 +153,15 @@ and than you will connect via ssh without password but if you entered passphrase
     sudo snap install solc && solc --version
     ```
 
+##
+
+### Contributing
+
+[Contributions of any kind welcome, just follow the guidelines](contributing.md)!
+
+### Contributors
+
+[Thanks goes to these contributors](https://github.com/cybersecurity-dev/Bash-Toolkit/graphs/contributors)!
+
+[🔼 Back to top](#bash-toolkit--your-swiss-army-knife-for-the-command-line)
+

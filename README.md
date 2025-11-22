@@ -18,6 +18,34 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+
+
+
+## Alias List
+
+```bash
+alias cat="batcat"
+```
+
+* [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)
+  ```bash
+  alias cmd_system_update='sudo apt update && sudo apt full-upgrade -y && \
+                           sudo apt autoremove && sudo apt clean && \
+                           sudo apt autoclean && sudo apt autopurge'
+  ```
+* [![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=fff)](#)
+  ```bash
+  alias cmd_system_update='sudo dnf upgrade --refresh -y && \
+                           sudo dnf autoremove -y && sudo dnf clean all'
+  ```
+* [![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=SUSE&logoColor=white)](#)
+  ```bash
+  alias cmd_system_update='sudo zypper refresh && \
+                           sudo zypper dist-upgrade -y --auto-agree-with-licenses && \
+                           sudo zypper ps -s && sudo zypper clean --all && \
+                           sudo zypper remove-orphaned'
+  ```
+  
 ##  Install SSH server
 
 * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)
@@ -154,6 +182,8 @@ and than you will connect via ssh without password but if you entered passphrase
     ```bash
     sudo snap install solc && solc --version
     ```
+
+
 
 ##
 

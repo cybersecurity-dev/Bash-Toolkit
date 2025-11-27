@@ -1,11 +1,11 @@
 <div align="center">
     <p align="center">
-        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">
+        <a href="https://github.com/cybersecurity-dev/awesome-bash-scripting-language">
           <img width="25%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Bash_logo.svg" />
         </a>
     </p>
 
-# **[Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) Toolkit** | _Your Swiss Army Knife for the Command Line_
+# **[Bash](https://wikipedia.org/wiki/Bash_(Unix_shell)) Toolkit** | _Your Swiss Army Knife for the Command Line_
 </div>
 
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/cybersecurity-dev/awesome-bash-scripting-language)
@@ -20,9 +20,6 @@
     <a href="https://cyberthreatdefence.com/my_awesome_lists"><img height="20" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/blog.svg" alt="My Awesome Lists"></a>
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
-
-
-
 
 ## Alias List
 

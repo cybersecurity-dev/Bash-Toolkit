@@ -45,7 +45,23 @@ alias cat="batcat"
                            sudo zypper ps -s && sudo zypper clean --all && \
                            sudo zypper remove-orphaned'
   ```
-  
+
+## TMUX List
+
+* New session:
+    ```bash
+    tmux new -s <session-name>
+    ```
+* Attach session:
+    ```bash
+    tmux a -t <session-name>
+    ```
+* Remove session:
+    ```bash
+    tmux kill-session -t <session-name>
+    ```
+
+
 ##  Install SSH server
 
 * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)

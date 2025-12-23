@@ -47,7 +47,10 @@ alias cat="batcat"
   ```
 
 ## TMUX List
-
+* List session:
+    ```bash
+    tmux ls
+    ```
 * New session:
     ```bash
     tmux new -s <session-name>
@@ -60,7 +63,10 @@ alias cat="batcat"
     ```bash
     tmux kill-session -t <session-name>
     ```
-
+* Quit session:
+    ```bash
+    q
+    ```
 
 ##  Install SSH server
 

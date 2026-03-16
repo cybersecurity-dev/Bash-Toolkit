@@ -1,3 +1,4 @@
+echo "=== Checking Duplicate Filenames ===" && \
 find <file_dir> -mindepth 2 -maxdepth 2 -type f | \
   xargs -I {} basename {} | \
   sort | uniq -d | \

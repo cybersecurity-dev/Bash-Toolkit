@@ -48,20 +48,43 @@ alias cat="batcat"
 
 ## [SCP](https://man7.org/linux/man-pages/man1/scp.1.html)/[RSYNC](https://man7.org/linux/man-pages/man1/rsync.1.html)
 Remote (and local) file-copying Tools
-* Download
+* DOWNLOAD
     ```bash
     scp -r username@server_ip:/source/path/to/folder /destination/local/path/
     ```
     ```bash
     rsync -avz username@server_ip:/source/path/to/folder /destination/local/path/
     ```
-* Upload
+* UPLOAD
     ```bash
     scp -r /source/local/path/ username@server_ip:/destination/path/to/folder
     ```
     ```bash
     rsync -avz /source/local/path/ username@server_ip:/destination/path/to/folder
     ```
+* COPY/SYNC between two Servers
+    ```bash
+    scp -r username1@server_ip1:/source/path/to/folder/* username2@server_ip2:/destination/path/to/folder/*
+    ```
+    ```bash
+    rsync -avz username1@server_ip1:/source/path/to/folder/* username2@server_ip2:/destination/path/to/folder/*
+    ```
+  ```bash
+    rsync -avzh -e ssh --progress \
+    username1@server_ip1:/source/path/to/folder/* \
+    username2@server_ip2:/destination/path/to/folder/*
+    ```
+Noteworthy `rsync` options include:
+* -r: Recurse through directories 
+* -a: for syncing archives recursively, preserving symbolic links, modification times, groups, owners, and permissions.
+* -z: This option is for compressing the files before sending them in order to reduce the bandwidth when copying them.
+* -h: human-readable, output numbers in a human-readable format.
+* -p: preserve permissions
+* -P: same as --partial --progress
+* -u: skip files that are newer on the receiver
+* -e: specify the remote shell to use
+* `--include='*.txt'` # _rsync will include only files with the `.txt` extension from the /source/path/to/folder/* directory during the transfer._
+* `--exclude='*.ext'` # _rsync will exclude files with the specified extension `*.ext` from the /source/path/to/folder/* directory during the transfer._
 
 ## TMUX List
 * List session:

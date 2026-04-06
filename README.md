@@ -46,6 +46,23 @@ alias cat="batcat"
                            sudo zypper remove-orphaned'
   ```
 
+## [SCP](https://man7.org/linux/man-pages/man1/scp.1.html)/[RSYNC](https://man7.org/linux/man-pages/man1/rsync.1.html)
+Remote (and local) file-copying Tools
+* Download
+    ```bash
+    scp -r username@server_ip:/source/path/to/folder /destination/local/path/
+    ```
+    ```bash
+    rsync -avz username@server_ip:/source/path/to/folder /destination/local/path/
+    ```
+* Upload
+    ```bash
+    scp -r /source/local/path/ username@server_ip:/destination/path/to/folder
+    ```
+    ```bash
+    rsync -avz /source/local/path/ username@server_ip:/destination/path/to/folder
+    ```
+
 ## TMUX List
 * List session:
     ```bash

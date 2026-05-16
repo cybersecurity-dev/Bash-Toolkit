@@ -21,6 +21,14 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+## 📖 Contents
+  - [Alias List](#alias-list)
+  - [SCP/RSYNC](#scprsync)
+  - [TMUX List](#tmux-list)
+  - [My Awesome Lists](#my-awesome-lists)
+  - [Contributing](#contributing)
+  - [Contributors](#contributors)
+
 ## Alias List
 
 ```bash
@@ -99,14 +107,19 @@ Noteworthy `rsync` options include:
     ```bash
     tmux a -t <session-name>
     ```
+* Detach session:
+    ```bash
+    Ctrl+b d
+    ```
 * Remove session:
     ```bash
     tmux kill-session -t <session-name>
     ```
-* Quit session:
-    ```bash
-    q
-    ```
+* Splitting windows into panes
+  ```
+  To create a horizontal split, press Ctrl+b followed by " (that's a double-quote).
+  To create a vertical split, press Ctrl+b followed by % (percent).
+  ```
 
 ##  Install SSH server
 

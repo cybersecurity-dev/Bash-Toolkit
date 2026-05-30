@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# =============================================================================
+# ==================================================================================================================================================
 # create_file_type_statistics.sh
 # Scans a directory and classifies files by magic number / shebang line,
 # then prints a summary report with per-type counts and file lists.
@@ -10,6 +10,7 @@
 #   PCAP | PCAPng | ZIP | GZIP | TAR | 7-Zip | RAR | Other
 #
 # Usage:
+#   chmod +x ./create_file_type_statistics.sh
 #   ./create_file_type_statistics.sh [OPTIONS] <directory>
 #
 # Options:
@@ -18,7 +19,7 @@
 #   -o <file>   Save report to a file (also prints to stdout)
 #   -c          Disable colour output
 #   -h          Show this help
-# =============================================================================
+# ===================================================================================================================================================
 
 set -euo pipefail
 

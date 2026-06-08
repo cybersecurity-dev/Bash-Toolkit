@@ -108,7 +108,10 @@ alias conda_vulnerability='cd $HOME/workspace/workspace_vulnerability/ && conda 
 
 ##########################
 
+alias cmd_find_identify_large_directories='du -h --max-depth=1 | sort -hr'
+alias cmd_find_large_individual_files='find . -type f -exec du -h {} + 2>/dev/null | sort -hr | head -n 20'
 
+alias cmd_list_number_of_files='find . -type f | cut -d/ -f2 | sort | uniq -c | sort -nr | head -n 10'
 
 ##########################
 # Check available power states

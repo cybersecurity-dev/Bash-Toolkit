@@ -113,6 +113,12 @@ alias cmd_find_large_individual_files='find . -type f -exec du -h {} + 2>/dev/nu
 
 alias cmd_list_number_of_files='find . -type f | cut -d/ -f2 | sort | uniq -c | sort -nr | head -n 10'
 
+
+alias cmd_show_ip='ip addr show'
+alias cmd_show_cpu="lscpu | grep -E '^Thread|^Core|^Socket|^CPU\('"
+alias cmd_show_cpu_model='grep -m 1 'model name' /proc/cpuinfo'
+
+
 ##########################
 # Check available power states
 available_states=$(cat /sys/power/state)

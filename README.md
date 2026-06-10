@@ -33,6 +33,8 @@
 
 ```bash
 alias cat="batcat"
+alias cmd_sleep="sudo systemctl suspend"
+alias cmd_hibernate="sudo systemctl hibernate"
 ```
 
 * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)

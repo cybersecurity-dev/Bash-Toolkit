@@ -35,6 +35,7 @@
 alias cat="batcat"
 alias cmd_sleep="sudo systemctl suspend"
 alias cmd_hibernate="sudo systemctl hibernate"
+alias cmd_kill_python="ps -u "$USER" -o pid,comm,args | grep python | grep -v grep | awk '{print $1}' | xargs kill -9"
 ```
 
 * [![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff)](#)

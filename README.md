@@ -124,17 +124,22 @@ Noteworthy `rsync` options include:
   To create a vertical split, press Ctrl+b followed by % (percent).
   ```
 
+## Host Discovery, Port Scanning
+* arp-scan
+    ```bash
+    sudo arp-scan --verbose --localnet
+    ```
+* Nmap
+
 ##
 
 ### My Awesome Lists
 You can access the my awesome lists [here](https://cyberthreatdefence.com/my_awesome_lists)
 
 ### Contributing
-
 [Contributions of any kind welcome, just follow the guidelines](contributing.md)!
 
 ### Contributors
-
 [Thanks goes to these contributors](https://github.com/cybersecurity-dev/Bash-Toolkit/graphs/contributors)!
 
 [🔼 Back to top](#bash-toolkit--your-swiss-army-knife-for-the-command-line)

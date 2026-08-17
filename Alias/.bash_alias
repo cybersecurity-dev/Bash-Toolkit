@@ -1,4 +1,6 @@
-##########################
+alias cmd_update_bashrc='source ~/.bashrc'
+
+#---------------------------------------------------------------------------------------------------
 case "$OSTYPE" in  linux-gnu*)
 	alias cmd_update_linux='sudo apt-get update && sudo apt-get upgrade'
 	alias cmd_clean_fix='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get autoclean && sudo apt-get autoremove'
@@ -8,56 +10,65 @@ case "$OSTYPE" in  linux-fedora*)
 	alias cmd_update_linux='sudo dnf update'
     ;;
 esac
-##########################
 
-##########################
-alias print_distro='uname -a'
-alias print_cpu='cat /proc/cpuinfo'
-alias print_ram='free -m'
-alias print_ip="echo 'Your Ip: `curl -o- -s https://api.ipify.org/`'"
-##########################
+#---------------------------------------------------------------------------------------------------
 
 
-##########################
+#---------------------------------------------------------------------------------------------------
+alias cmd_show_system_distro='uname -a'
+alias cmd_show_system_cpu='cat /proc/cpuinfo'
+alias cmd_show_system_ram='free -m'
+#---------------------------------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------------------------------
 alias cmd_count_files="ls -l . | egrep -c '^-'"
 alias cmd_count_filetypes="find . -type f | sed -n 's/..*\.//p' | sort | uniq -c"
 alias cmd_count_directory="tree -a . | tail -1"
 alias cmd_groupby_filetypes='find . -type f | sed -n 's/..*\.//p' | sort | uniq -c'
+#---------------------------------------------------------------------------------------------------
 
 
+
+#---------------------------------------------------------------------------------------------------
 alias cmd_delete_empty_directory="find . -empty -type d -delete"
 alias cmd_delete_empty_file="find . -empty -type f -delete"
+#---------------------------------------------------------------------------------------------------
 
 
+#---------------------------------------------------------------------------------------------------
 alias cmd_update_bashrc='source ~/.bashrc'
-alias cmd_ping='ping -c 5 www.google.com'
-##########################
+alias cmd_ping='ping -c 10 www.google.com'
+#---------------------------------------------------------------------------------------------------
+
+
+#---------------------------------------------------------------------------------------------------
+alias cmd_watch_system_wHtop='htop -u $USER'
+alias cmd_watch_system_wBpytop='bpytop'
+#---------------------------------------------------------------------------------------------------
 
 
 
-##########################
-alias watch_system_wHtop='htop -u $USER'
-alias watch_system_wBpytop='bpytop'
-alias watch_Ports='ss -lt'
-alias print_IP_Geolocation='curl ipinfo.io'
-##########################
+#---------------------------------------------------------------------------------------------------
+alias cmd_watch_ports='ss -lt'
+alias cmd_watch_ports_wprotocol='sudo netstat -tulanp'
+#---------------------------------------------------------------------------------------------------
 
 
-##########################
+#---------------------------------------------------------------------------------------------------
 alias listen_SwissClassic96kbps='mplayer http://stream.srg-ssr.ch/m/rsc_de/aacp_96'
 alias listen_SwissClassic128kbps='mplayer http://stream.srg-ssr.ch/m/rsc_de/mp3_128'
 
 alias listen_SwissJazz96kbps='mplayer http://stream.srg-ssr.ch/m/rsj/aacp_96'
 alias listen_SwissJazz128kbps='mplayer http://stream.srg-ssr.ch/m/rsj/mp3_128'
 
-
 alias listen_SwissPop96kbps='mplayer http://stream.srg-ssr.ch/m/rsp/aacp_96'
 alias listen_SwissPop128kbps='mplayer http://stream.srg-ssr.ch/m/rsp/mp3_128'
-##########################
+#---------------------------------------------------------------------------------------------------
 
 
-##########################
-alias cmd_update_bashrc='source ~/.bashrc'
+#---------------------------------------------------------------------------------------------------
 
 function fn_print_process_id() {
     function_id=`ps -ef | grep $1 | head -n 1 | cut -f5 -d " "`
@@ -68,24 +79,33 @@ function fn_run_python3_background() {
   nohup python3 $1.py 1> "$1.out" 2> "$1.err" &
 }
 
-function fn_print_directory_size() {
-    sudo du -sh $1
-}
-
-function fn_mkdircd() {
+function mkcd() {
   mkdir "$1"
   cd "$1"
 }
 
-##########################
+#---------------------------------------------------------------------------------------------------
 
-##########################
-alias d_workspace='cd ~/workspace'
-alias d_workspace_jupy='cd ~/workspace/w_jupyter'
-##########################
+#---------------------------------------------------------------------------------------------------
+alias dw='cd ~/workspace'
+alias dw_jupyter='cd ~/workspace/w_jupyter'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+#---------------------------------------------------------------------------------------------------
 
 
-##########################
+#---------------------------------------------------------------------------------------------------
+alias conda_network='cd $HOME/workspace/w_network/ && conda activate .venv_network'
+alias conda_malware='cd $HOME/workspace/w_malware/ && conda activate .venv_malware'
+alias conda_reverse='cd $HOME/workspace/w_reverse/ && conda activate .venv_reverse'
+alias conda_python='cd $HOME/workspace/w_python/  && conda activate .venv_python'
+alias conda_packer='cd $HOME/workspace/w_packer/  && conda activate .venv_packer'
+alias conda_vulnerability='cd $HOME/workspace/w_vulnerability/ && conda activate .venv_vulnerability'
+#---------------------------------------------------------------------------------------------------
+
+
+#---------------------------------------------------------------------------------------------------
 alias run_jupyter='d_workspace && d_workspace_jupy && jupyter notebook --no-browser --port=8855'
 alias run_jupyter_hohup='d_workspace && d_workspace_jupy && nohup jupyter notebook --no-browser --port=8855 1> "jupyter_notebook.out" 2> "jupyter_notebook.err" &'
 
@@ -93,50 +113,74 @@ alias run_jupyterLab='d_workspace && d_workspace_jupy && jupyter lab --no-browse
 alias run_jupyterLab_hohup='d_workspace && d_workspace_jupy && nohup jupyter notebook --no-browser --port=8855 1> "jupyter_notebook.out" 2> "jupyter_notebook.err" &'
 
 alias run_list_running_server='jupyter notebook list'
+#---------------------------------------------------------------------------------------------------
 
-##########################
 
-
-##########################
-
-alias conda_packer='cd $HOME/workspace/workspace_packer/ && conda activate workspace_packer'
-alias conda_network='cd $HOME/workspace/workspace_network/ && conda activate workspace_network'
-alias conda_malware='cd $HOME/workspace/workspace_malware/ && conda activate workspace_malware'
-alias conda_reverse='cd $HOME/workspace/workspace_reverse/ && conda activate workspace_reverse'
-alias conda_python='cd $HOME/workspace/workspace_python/ && conda activate workspace_python'
-alias conda_vulnerability='cd $HOME/workspace/workspace_vulnerability/ && conda activate workspace_vulnerability'
-
-##########################
-
+#---------------------------------------------------------------------------------------------------
 alias cmd_find_identify_large_directories='du -h --max-depth=1 | sort -hr'
 alias cmd_find_large_individual_files='find . -type f -exec du -h {} + 2>/dev/null | sort -hr | head -n 20'
-
 alias cmd_list_number_of_files='find . -type f | cut -d/ -f2 | sort | uniq -c | sort -nr | head -n 10'
+#---------------------------------------------------------------------------------------------------
 
-
-alias cmd_show_ip='ip addr show'
+#---------------------------------------------------------------------------------------------------
 alias cmd_show_cpu="lscpu | grep -E '^Thread|^Core|^Socket|^CPU\('"
 alias cmd_show_cpu_model='grep -m 1 'model name' /proc/cpuinfo'
+#---------------------------------------------------------------------------------------------------
 
 
-##########################
+#---------------------------------------------------------------------------------------------------
 # Check available power states
 available_states=$(cat /sys/power/state)
 
 # Create aliases if power states are available
 if [[ $available_states == *"freeze"* ]]; then
-  alias cmd_suspend='sudo systemctl suspend'
+  alias cmd_power_suspend='sudo systemctl suspend'
 fi
 
 if [[ $available_states == *"standby"* ]]; then
-  alias cmd_suspend='sudo systemctl suspend'
+  alias cmd_power_suspend='sudo systemctl suspend'
 fi
 
 if [[ $available_states == *"mem"* ]]; then
-  alias cmd_suspend='sudo systemctl suspend'
+  alias cmd_power_suspend='sudo systemctl suspend'
 fi
 
 if [[ $available_states == *"disk"* ]]; then
-  alias cmd_hibernate='sudo systemctl hibernate'
-##########################
+  alias cmd_power_hibernate='sudo systemctl hibernate'
+#---------------------------------------------------------------------------------------------------
 
+
+#---------------------------------------------------------------------------------------------------
+alias cmd_show_ip_local='ip addr show'
+alias cmd_show_ip_geoloc='curl ipinfo.io'
+alias cmd_show_ipv4_global="echo 'Your Ip: `curl -o- -s https://api.ipify.org/`'"
+function cmd_show_ipv6_global() {
+    printf '──────────── My IP Addresses: ────────────\n'
+    printf 'IPv4: '
+    curl -4 -s --connect-timeout 2 ifconfig.me || printf 'Not Available'
+    printf '\nIPv6: '
+    curl -6 -s --connect-timeout 2 ifconfig.me || printf 'Not Available'
+    printf '\n─────────────────────────────────────────\n'
+}
+#---------------------------------------------------------------------------------------------------
+
+
+
+#---------------------------------------------------------------------------------------------------
+function print_directory_size() {
+    sudo du -sh $1
+}
+
+function df() {
+    command df -h 2>/dev/null |
+    {
+        read -r header
+        echo "$header"
+        grep -vE '^/dev/loop|^efivarfs' | sort -k6,6
+    } |
+    sed -E '
+        s/(100%|9[0-9]%)/\x1b[31m&\x1b[0m/g
+        s/([[00-8]?[0-9]%)/\x1b2m&\x1b[0m/g
+    '
+}
+#---------------------------------------------------------------------------------------------------

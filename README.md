@@ -5,12 +5,12 @@
         </a>
     </p>
 
-# **[Bash](https://wikipedia.org/wiki/Bash_(Unix_shell)) Toolkit** | _Your Swiss Army Knife for the Command Line_
+# **[Bash](https://wikipedia.org/wiki/Bash_(Unix_shell)) Toolkit** | _Your Swiss Army Knife for the [Command Line](https://github.com/cybersecurity-dev/awesome-bash-scripting-resources)_
 </div>
 
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/cybersecurity-dev/awesome-bash-scripting-language)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVE4xP0WgiRLa_Fiszl83s0&si=bUeRrjG-EsewaOnO)
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/bash/)
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/bash/new/)
 
 <p align="center">
     <a href="https://github.com/cybersecurity-dev/"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/github.svg" alt="GitHub"></a>
@@ -21,6 +21,54 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+```mermaid
+timeline
+    title Bash Development Roadmap
+
+    Fundamentals
+        : Shell Basics
+        : Variables
+        : Arguments
+        : Exit Codes
+
+    Scripting
+        : Functions
+        : Loops
+        : Conditions
+        : Arrays
+
+    Linux Tools
+        : grep
+        : sed
+        : awk
+        : find
+
+    System Administration
+        : Processes
+        : Services
+        : Logs
+        : Permissions
+
+    Automation
+        : cron
+        : Backup Scripts
+        : Monitoring Scripts
+
+    Quality Assurance
+        : ShellCheck
+        : Bats
+        : Logging
+
+    Collaboration
+        : Git
+        : GitHub
+        : CI/CD
+
+    Advanced
+        : Networking
+        : Performance Tuning
+        : Infrastructure Automation
+```
 ## 📖 Contents
   - [Alias List](#alias-list)
   - [SCP/RSYNC](#scprsync)
@@ -147,4 +195,3 @@ You can access the my awesome lists [here](https://cyberthreatdefence.com/my_awe
 [Thanks goes to these contributors](https://github.com/cybersecurity-dev/Bash-Toolkit/graphs/contributors)!
 
 [🔼 Back to top](#bash-toolkit--your-swiss-army-knife-for-the-command-line)
-

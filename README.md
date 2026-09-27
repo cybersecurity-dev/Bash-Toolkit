@@ -177,6 +177,7 @@ Noteworthy `rsync` options include:
     ```bash
     sudo arp-scan --verbose --localnet
     ```
+> [!TIP]
 > * Sends ARP requests on the local network
 > * Discovers active hosts
 > * Works only on the local Layer-2 network
